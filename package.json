@@ -21,7 +21,8 @@
   "homepage": "https://github.com/henriqued25/alerta-alagamentos-sls#readme",
   "dependencies": {
     "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "postgres": "^3.4.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
