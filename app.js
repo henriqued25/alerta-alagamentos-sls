@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require('cors')
 const app = express();
 const config = require("./src/config"); // Importa as configurações gerais
 const { connectDB } = require("./src/config/dbConfig"); // Importa a pool e a função de conexão
@@ -13,6 +14,7 @@ async function startServer() {
 
     // Middleware para parsear JSON no corpo das requisições
     app.use(express.json());
+    app.use(cors());
 
     // Rotas da API
     app.use("/api/users", userRoutes);
