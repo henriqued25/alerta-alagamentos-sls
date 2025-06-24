@@ -6,7 +6,7 @@ const pool = new Pool({
     connectionString: config.databaseUrl,
 
     // Configura o uso de SSL/TLS para a conexão com o PostgreSQL.
-    // ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false,
+    ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false,
 });
 
 // Função para testar a conexão

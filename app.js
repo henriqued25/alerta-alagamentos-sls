@@ -21,7 +21,7 @@ async function startServer() {
     // Inicia o servidor usando a porta das configurações
     app.listen(config.port, () => {
         console.log(`Servidor rodando em http://localhost:${config.port}`);
-        // console.log(`Ambiente: ${config.environment}`);
+        console.log(`Ambiente: ${config.environment}`);
     });
 }
 
