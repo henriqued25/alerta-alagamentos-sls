@@ -1,5 +1,5 @@
 const { Pool } = require("pg");
-const config = require("./index"); // Importa as configurações do config/index.js
+const config = require("./index");
 
 // Configuração da Pool
 const pool = new Pool({
@@ -12,7 +12,7 @@ const pool = new Pool({
 // Função para testar a conexão
 async function connectDB() {
     try {
-        await pool.query("SELECT NOW()"); // Testa a conexão com uma query simples
+        await pool.query("SELECT NOW()"); 
         console.log(
             "Conexão com o banco de dados PostgreSQL estabelecida com sucesso!"
         );
@@ -21,11 +21,10 @@ async function connectDB() {
             "Não foi possível conectar ao banco de dados PostgreSQL:",
             error
         );
-        process.exit(1); // Encerra o processo se a conexão falhar
+        process.exit(1); 
     }
 }
 
-// Exporta a pool e a função de conexão
 module.exports = {
     pool,
     connectDB,
