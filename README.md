@@ -1,4 +1,4 @@
-# Painel de Gestão sobre Alagamentos - Desafio 5 | Trilhas
+# Painel de Gestão de Alagamentos - Desafio 5 | Trilhas
 
 Este projeto é parte do **Desafio 5 do programa Trilhas** e tem como objetivo a criação de uma **plataforma informativa, interativa e colaborativa sobre alagamentos**.  
 
